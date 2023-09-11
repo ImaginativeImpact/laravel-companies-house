@@ -32,7 +32,7 @@ composer require imaginativeimpact/laravel-companies-house
 You can publish the config file with:
 
 ```php
-php artisan vendor:publish --provider="ImaginativeImpact/LaravelCompaniesHouse/CompaniesHouseServiceProvider" --tag="config"
+php artisan vendor:publish --provider="ImaginativeImpact\LaravelCompaniesHouse\CompaniesHouseServiceProvider" --tag="config"
 ```
 
 When published, the config/companieshouse.php config file contains:
@@ -95,7 +95,7 @@ CompaniesHouse::searchCompaniesAlphabetic($term, $searchAbove, $searchBelow);
 Search companies advanced
 
 ```php
-searchCompaniesAdvanced($companyNameIncludes, $companyNameExcludes, $companyStatuses, $companySubtypes, $companyTypes, $dissolvedFrom, $dissolvedTo, $incorporatedFrom, $incorporatedTo, $location, $sicCodes);
+CompaniesHouse::searchCompaniesAdvanced($companyNameIncludes, $companyNameExcludes, $companyStatuses, $companySubtypes, $companyTypes, $dissolvedFrom, $dissolvedTo, $incorporatedFrom, $incorporatedTo, $location, $sicCodes);
 ```
 
 Search Officer
